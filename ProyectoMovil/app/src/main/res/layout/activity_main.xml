@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnInfoMarket"
+        android:layout_width="286dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="166dp"
+        android:onClick="onInfoMarket"
+        android:text="InfoMarket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Button
+        android:id="@+id/btnSee"
+        android:layout_width="261dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="180dp"
+        android:onClick="onListClick"
+        android:text="List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfoMarket" />
+
+    <Button
+        android:id="@+id/btnMAdd"
+        android:layout_width="231dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="260dp"
+        android:onClick="onAddClick"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSee" />
+
+    <Button
+        android:id="@+id/btnInfoGroup"
+        android:layout_width="231dp"
+        android:layout_height="73dp"
+        android:onClick="onDevelopersClick"
+        android:text="Developers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/btnMRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onRegisterClick"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/btnInfoGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
